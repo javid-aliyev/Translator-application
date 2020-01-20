@@ -4,6 +4,9 @@ from os import system
 
 # TODO: solve encoding problems
 
+def docs():
+	pass
+
 def main():
 	translator = Translator()
 	src = "en"
@@ -12,24 +15,29 @@ def main():
 	run = True
 	while run:
 		try:
-			user_input = input("~ ").strip().lower()
+			user_input = input("~ ").strip()
 		except KeyboardInterrupt:
 			run = False
 
-		if user_input == ":dest":
-			try: d = input("Destination(en/ru/..)? ")
-			dest = d
+		# commands
+		if user_input == ":setdest":
+			try:
+				d = input("Destination(en/ru/..)? ").strip().lower()
+				dest = d
 			except KeyboardInterrupt: exit()
-		elif user_input == ":src":
-			# set source
-			pass
-		elif user_input == ":help":
-			# help
-			pass
+		elif user_input == ":setsrc":
+			try:
+				s = input("Source(en/ru/..)? ").strip().lower()
+				src = s
+			except KeyboardInterrupt: exit()
+		elif user_input == ":getdest": print(dest)
+		elif user_input == ":getsrc": print(src)
+		elif user_input == ":help": docs()
 		elif user_input == ":clear":
 			system("clear") # TODO: ADD windows/linux/osx condition
 			system("cls")
 		elif user_input == ":exit":	exit()
+		elif user_input.strip() == "": continue
 		else:
 			try:
 				translated = translator.translate(
