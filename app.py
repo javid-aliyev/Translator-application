@@ -2,8 +2,6 @@ from googletrans import Translator
 from sys import exit
 from os import system
 
-# TODO: solve encoding problems
-
 def docs():
 	pass
 
@@ -34,7 +32,7 @@ def main():
 		elif user_input == ":getsrc": print(src)
 		elif user_input == ":help": docs()
 		elif user_input == ":clear":
-			system("clear") # TODO: ADD windows/linux/osx condition
+			system("clear")
 			system("cls")
 		elif user_input == ":exit":	exit()
 		elif user_input.strip() == "": continue
