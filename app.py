@@ -2,6 +2,8 @@ from googletrans import Translator
 from sys import exit
 from os import system
 
+# TODO: solve encoding problems
+
 def main():
 	translator = Translator()
 	src = "en"
@@ -15,8 +17,9 @@ def main():
 			run = False
 
 		if user_input == ":dest":
-			# set destination
-			pass
+			try: d = input("Destination(en/ru/..)? ")
+			dest = d
+			except KeyboardInterrupt: exit()
 		elif user_input == ":src":
 			# set source
 			pass
