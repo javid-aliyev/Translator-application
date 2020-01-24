@@ -21,12 +21,20 @@ def main():
 		if user_input == ":setdest":
 			try:
 				d = input("Destination(en/ru/..)? ").strip().lower()
-				dest = d
+				# input != ""
+				if d != "":
+					dest = d
+				else:
+					continue
 			except KeyboardInterrupt: exit()
 		elif user_input == ":setsrc":
 			try:
 				s = input("Source(en/ru/..)? ").strip().lower()
-				src = s
+				# input != ""
+				if s != "":
+					src = s
+				else:
+					continue
 			except KeyboardInterrupt: exit()
 		elif user_input == ":getdest": print(dest)
 		elif user_input == ":getsrc": print(src)
