@@ -1,9 +1,10 @@
 from googletrans import Translator
 from sys import exit
 from os import system
+from platform import system as get_os_name
 
 def docs():
-	pass
+	print("<github repository url>")
 
 def main():
 	translator = Translator()
@@ -38,10 +39,18 @@ def main():
 			except KeyboardInterrupt: exit()
 		elif user_input == ":getdest": print(dest)
 		elif user_input == ":getsrc": print(src)
+		elif user_input == ":reverse":
+			srcbuf = src
+			src = dest
+			dest = srcbuf
+			print("Source language      : %s" % src)
+			print("Destination language : %s" % dest)
 		elif user_input == ":help": docs()
 		elif user_input == ":clear":
-			system("clear")
-			system("cls")
+			osname = get_os_name().lower()
+			# linux; osx
+			if osname == "linux" or osname == "darwin": system("clear")
+			if osname == "windows": system("cls")
 		elif user_input == ":exit":	exit()
 		elif user_input.strip() == "": continue
 		else:
