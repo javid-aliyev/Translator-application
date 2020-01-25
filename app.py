@@ -4,7 +4,7 @@ from os import system
 from platform import system as get_os_name
 
 def docs():
-	print("<github repository url>")
+	print("https://github.com/javid-aliyev/Translator-application")
 
 def main():
 	translator = Translator()
