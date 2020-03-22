@@ -40,9 +40,7 @@ def main():
 		elif user_input == ":getdest": print(dest)
 		elif user_input == ":getsrc": print(src)
 		elif user_input == ":reverse":
-			srcbuf = src
-			src = dest
-			dest = srcbuf
+			src, dest = dest, src
 			print("Source language      : %s" % src)
 			print("Destination language : %s" % dest)
 		elif user_input == ":help": docs()
