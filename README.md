@@ -14,7 +14,7 @@ To control the program, text commands are used. If the input starts with ":", th
 
 ---
 #### Commands
-##### Commands (8):
+##### Commands (9):
 - :getdest;
 - :getsrc;
 - :getboth;
