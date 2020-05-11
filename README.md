@@ -17,6 +17,7 @@ To control the program, text commands are used. If the input starts with ":", th
 ##### Commands (8):
 - :getdest;
 - :getsrc;
+- :getboth;
 - :setdest;
 - :setsrc;
 - :reverse;
@@ -29,12 +30,12 @@ To control the program, text commands are used. If the input starts with ":", th
 1. **:getdest** - displays the language into which you want to translate.
 2. **:getsrc** - displays the language from which you want to translate.
 3. **:getboth** - returns dest and src together.
-3. **:setdest** - changes the language you want to translate into.
-4. **:setsrc** - changes the language from which you want to translate.
-5. **:reverse** - changes the language from which you want to translate and the language into which you need to translate.
-6. **:help** - displays a link to this documentation.
-7. **:clear** - clears the console.
-8. **:exit** - quits the program.
+4. **:setdest** - changes the language you want to translate into.
+5. **:setsrc** - changes the language from which you want to translate.
+6. **:reverse** - changes the language from which you want to translate and the language into which you need to translate.
+7. **:help** - displays a link to this documentation.
+8. **:clear** - clears the console.
+9. **:exit** - quits the program.
 
 # More information
 Written on Windows 7 x64 and then on Linux Ubuntu LTS 18.04.4 x64 by Javid Aliyev.
