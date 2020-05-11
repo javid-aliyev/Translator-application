@@ -38,4 +38,4 @@ To control the program, text commands are used. If the input starts with ":", th
 9. **:exit** - quits the program.
 
 # More information
-Written on Windows 7 x64 and then on Linux Ubuntu LTS 18.04.4 x64 by Javid Aliyev.
+Written on Windows 7 x64 and then rewritten on Linux Ubuntu LTS 18.04.4 x64 by Javid Aliyev.
