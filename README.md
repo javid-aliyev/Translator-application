@@ -13,6 +13,8 @@ To control the program, text commands are used. If the input starts with ":", th
 *You can change **destination** and **source** language with some commands.*
 
 ---
+DEPENDENCIES: python3.6.9 googletrans(==2.4.0) module
+---
 #### Commands
 ##### Commands (9):
 - :getdest;
