@@ -1,0 +1,2 @@
+fix bug when ^C in sinput of main func
+add colorama module (make decorators and hardcode other stuff(for example in execute_command func))

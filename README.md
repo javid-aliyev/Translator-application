@@ -28,6 +28,7 @@ To control the program, text commands are used. If the input starts with ":", th
 
 1. **:getdest** - displays the language into which you want to translate.
 2. **:getsrc** - displays the language from which you want to translate.
+3. **:getboth** - returns dest and src together.
 3. **:setdest** - changes the language you want to translate into.
 4. **:setsrc** - changes the language from which you want to translate.
 5. **:reverse** - changes the language from which you want to translate and the language into which you need to translate.
@@ -36,4 +37,4 @@ To control the program, text commands are used. If the input starts with ":", th
 8. **:exit** - quits the program.
 
 # More information
-Written in Windows 7 x64 by Javid Aliyev.
+Written on Windows 7 x64 and then on Linux Ubuntu LTS 18.04.4 x64 by Javid Aliyev.
